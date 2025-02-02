@@ -1,0 +1,28 @@
+header {
+    position: relative;
+    background-color: transparent;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus-within {
+        background-color: white;
+    }
+
+    @include media-breakpoint-up(lg) {
+        z-index: 11;
+    }
+}
+
+.global-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 7;
+
+    &--sticky {
+        .header {
+            background-color: white;
+        }
+    }
+}

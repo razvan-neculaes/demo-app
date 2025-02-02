@@ -1,0 +1,38 @@
+.header-banner {
+    background-color: black;
+    padding: 10px 0;
+
+    &__container {
+        color: white;
+        position: relative;
+    }
+
+    &__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__close {
+        position: absolute;
+        color: white;
+        padding: 0 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: auto;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__hover-link {
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
