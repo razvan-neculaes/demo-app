@@ -1,0 +1,32 @@
+.promo-banner {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: rem-calc(8) 0 rem-calc(8);
+}
+
+.promo-text {
+    flex: 1; /* Allow the text to grow and take available space */
+    text-align: center; /* Center the text */
+}
+
+.close-btn {
+    background: none;
+    text-align: center;
+    line-height: 1; /* Adjust as needed */
+    border: none;
+    color: #fff;
+    padding: 0;
+    margin-right: rem-calc(10);
+    font-size: rem-calc(20);
+}
+
+.close-btn svg {
+    display: block; /* Remove any extra space around the SVG */
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Banner Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sticky-banner {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000; /* Ensures the banner stays on top */
+        }
+
+        .content {
+            padding: 20px;
+            height: 2000px; /* Just for demonstration purposes */
+        }
+
+        .super-sticky {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: 20px;
+            position: sticky;
+            top: 38px; /* Adjusted dynamically with JS */
+            z-index: 999;
+        }
+
+        .sticky-footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            bottom: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sticky-banner">
+        This is a sticky banner!
+    </div>
+
+    <div class="content">
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p class="super-sticky" id="superSticky">I want this element to stick below the header when it reaches it but scroll down like the other paragraphs.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+        <p>Scroll down to see the sticky banner in action.</p>
+    </div>
+
+    <div class="sticky-footer">
+        This is a sticky footer!
+    </div>
+
+
+    <script>
+        /*
+        const stickyBanner = document.querySelector('.sticky-banner');
+        const superSticky = document.getElementById('superSticky');
+
+        function updateStickyPosition() {
+            const bannerHeight = stickyBanner.offsetHeight;
+            superSticky.style.top = `${bannerHeight}px`;
+        }
+
+        window.addEventListener('load', updateStickyPosition);
+        window.addEventListener('resize', updateStickyPosition);
+        */
+    </script>
+
+</body>
+</html>

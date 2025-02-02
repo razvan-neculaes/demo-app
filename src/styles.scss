@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import "variables";
+
+@import "utils/units";
+@import "utils/fonts";
+
+@import "components/banners/top-banner-flex.scss";
+@import "components/nav/main-nav-flex.scss";
+
+
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    margin: 0;
+}

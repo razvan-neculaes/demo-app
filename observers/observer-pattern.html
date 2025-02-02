@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observer Pattern</title>
+</head>
+<body>
+    <button id="notifyButton">Notify Observers</button>
+    <script>
+        class Subject {
+            constructor() {
+                this.observers = [];
+            }
+
+            addObserver(observer) {
+                this.observers.push(observer);
+            }
+
+            notifyObservers(message) {
+                this.observers.forEach(observer => observer.update(message));
+            }
+        }
+
+        class Observer {
+            update(message) {
+                console.log('Observer received:', message);
+            }
+        }
+
+        const subject = new Subject();
+        const observer1 = new Observer();
+        const observer2 = new Observer();
+
+        subject.addObserver(observer1);
+        subject.addObserver(observer2);
+
+        document.getElementById('notifyButton').addEventListener('click', () => {
+            subject.notifyObservers('Hello Observers!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResizeObserver</title>
+    <style>
+        #resizableElement {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="resizableElement">Resize me!</div>
+    <script>
+        const resizableElement = document.getElementById('resizableElement');
+        const observer = new ResizeObserver(entries => {
+            entries.forEach(entry => {
+                console.log('Element size changed:', entry.contentRect);
+            });
+        });
+
+        observer.observe(resizableElement);
+    </script>
+</body>
+</html>

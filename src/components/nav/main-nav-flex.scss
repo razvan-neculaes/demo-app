@@ -1,0 +1,50 @@
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white; /* Change to white if needed */
+    padding: rem-calc(8);
+    position: sticky;
+    top: 0;
+    z-index: 101; /* Ensure it stays above the promo banner */
+}
+
+.hamburger-menu {
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0; // Ensure no margin
+        box-shadow: none; // Remove any box shadow
+        margin-right: rem-calc(10);
+    }
+
+    svg {
+        display: block;
+        fill: black; // Change to white if the background is dark
+    }
+}
+
+.logo {
+    margin-left: rem-calc(15);
+    transition: color 0.3s;
+    line-height: 1;
+
+    &__icon {
+        font-size: rem-calc(18);
+
+        @include media-breakpoint-up(lg) {
+            font-size: rem-calc(22);
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-left: rem-calc(37);
+    }
+}
+
+.icon-logo::before {
+    content: "\e90f";
+}
