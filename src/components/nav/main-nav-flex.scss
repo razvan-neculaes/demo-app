@@ -2,12 +2,18 @@
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between; /* Distribute space between items */
     background-color: white; /* Change to white if needed */
     padding: rem-calc(8);
     position: sticky;
     top: 0;
     z-index: 101; /* Ensure it stays above the promo banner */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+.left-items {
+    display: flex;
+    align-items: center;
 }
 
 .menu {
@@ -84,7 +90,6 @@
     content: "\e91d";
 }
 
-
 .logo {
     margin-left: rem-calc(15);
     transition: color 0.3s;
@@ -105,4 +110,16 @@
 
 .icon-logo::before {
     content: "\e90f";
+}
+
+.right-items {
+    display: flex;
+    align-items: center;
+    margin-right: rem-calc(15); /* Adjust as needed */
+}
+
+.icon-cart::before {
+    content: "\e91b"; /* Use the appropriate icon code */
+    font-size: rem-calc(25);
+    margin-left: rem-calc(10); /* Space between icons */
 }
