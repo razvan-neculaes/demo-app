@@ -121,5 +121,37 @@
 .icon-cart::before {
     content: "\e91b"; /* Use the appropriate icon code */
     font-size: rem-calc(25);
-    margin-left: rem-calc(10); /* Space between icons */
+    margin: 0 rem-calc(10);
+}
+
+.icon-wishlist::before {
+    content: "\e90a";
+    font-size: rem-calc(20);
+    margin: 0 rem-calc(10);
+}
+
+.minicart {
+    &__icon {
+        font-size: rem-calc(24);
+    }
+
+    &__quantity {
+        position: relative; /* Add this line */
+        display: inline-block; /* Change this to inline-block */
+        font-size: 9px;
+        color: white;
+        background: black;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        padding: 1px;
+        top: -7px;
+        left: -4px;
+
+        @include media-breakpoint-up(lg) {
+            top: -1.25em;
+            left: -45px;
+        }
+    }
 }
