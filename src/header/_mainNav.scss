@@ -5,12 +5,12 @@
         align-items: center;
         padding: 0.625em;
         background-color: white;
+        position: inherit;
 
         .nav {
             &__left {
                 display: flex;
                 align-items: center;
-                /* Add styles for left-aligned elements here */
             }
 
             &__right {
@@ -18,8 +18,8 @@
                 align-items: center;
 
                 .icon-minicart {
-                    transform: translateX(-1.5em);
-                    /* Add styles for the minicart icon here */
+                    margin-right: 2em;
+
                 }
             }
         }
