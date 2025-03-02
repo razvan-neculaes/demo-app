@@ -1,0 +1,129 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+    background-color: white;
+    position: inherit;
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        .icon-hamburger {
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+
+            &::before {
+                content: "\e91d";
+            }
+        }
+
+        .icon-logo {
+            margin-left: 2.25rem;
+            font-size: 1.3rem;
+
+            &::before {
+                content: "\e90f";
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        .site-search {
+            &__form {
+                &::after {
+                    content: none;
+                }
+            }
+
+            &__field {
+                border-width: 0 0 1px 0;
+                border-style: solid;
+                border-color: black;
+                background-color: transparent;
+                border-radius: 0;
+            }
+        }
+
+        .icon-search {
+            font-size: 1.4rem;
+            margin-right: 1.75rem;
+
+            &::before {
+                content: "\e906";
+            }
+        }
+
+        .icon-storelocator {
+            font-size: 1.4rem;
+            margin-right: 1.75rem;
+
+            &::before {
+                content: "\e907";
+            }
+        }
+
+        .icon-account {
+            font-size: 1.4rem;
+            margin-right: 1.75rem;
+
+            &::before {
+                content: "\e920";
+            }
+        }
+
+        .icon-wishlist {
+            font-size: 1.4rem;
+            margin-right: 1.75rem;
+            position: relative;
+
+            &::before {
+                content: "\e90a";
+            }
+        }
+
+        .quantity {
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1px;
+            font-size: 0.7rem;
+        }
+
+        .wishlist {
+            &__quantity {
+                position: absolute;
+                top: -0.05rem;
+                left: -0.5rem;
+            }
+        }
+
+        .icon-minicart {
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            position: relative;
+
+            &::before {
+                content: "\e91b";
+            }
+        }
+
+        .minicart {
+            &__quantity {
+                position: absolute;
+                top: 0rem;
+                left: -0.5rem;
+            }
+        }
+    }
+}

@@ -10,9 +10,37 @@
     <body>
         <header>
             <!-- Promotional Banner -->
-            <div class="promo-banner">Lorem ipsum dolor sit amet</div>
+            <div class="promo promo--banner">
+                <span class="promo__text">
+                   <a class="promo__link"><b class="promo__bold">IKKS DAYS :</b></a> 10% supp. dès 3 articles **
+                </span>
+                <button class="promo__close--button icon-cross" aria-label="Close promo banner"></button>
+            </div>
             <!-- The Main Navigation -->
-            <nav class="main-nav"></nav>
+            <nav class="main-nav">
+                <div class="main-nav__left">
+                    <!-- Hamburger menu and logo can be added here later -->
+                    <div class="hamburger icon-hamburger"></div>
+                    <div class="logo icon-logo"></div>
+                </div>
+                <div class="main-nav__right">
+                    <div class="site-search d-flex justify-content-end d-none">
+                        <form role="search" class="search-field site-search__form" name="simpleSearch">
+                            <input class="form-control search-field site-search__field font-title" placeholder="Recherche" type="text" name="q" autocomplete="off">
+                        <form>
+                    </div>
+                    <div class="search icon-search"></div>
+                    <div class="storelocator icon-storelocator d-none"></div>
+                    <div class="account icon-account"></div>
+                    <div class="wishlist icon-wishlist">
+                        <span class="quantity wishlist__quantity">6</span>
+                    </div>
+                    <div class="minicart icon-minicart">
+                        <span class="quantity minicart__quantity">10</span>
+                    </div>
+                    <!-- Other icons and search bar will be added here later -->
+                </div>
+            </nav>
         </header>
         <main>
             <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
