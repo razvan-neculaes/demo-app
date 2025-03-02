@@ -1,0 +1,27 @@
+.main {
+    &--nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.625em;
+        background-color: white;
+
+        .nav {
+            &__left {
+                display: flex;
+                align-items: center;
+                /* Add styles for left-aligned elements here */
+            }
+
+            &__right {
+                display: flex;
+                align-items: center;
+
+                .icon-minicart {
+                    transform: translateX(-1.5em);
+                    /* Add styles for the minicart icon here */
+                }
+            }
+        }
+    }
+}
