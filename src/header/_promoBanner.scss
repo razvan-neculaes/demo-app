@@ -1,0 +1,34 @@
+.promo {
+    &--banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: black;
+        color: white;
+        padding: 0.625rem;
+
+        .icon-cross::before {
+            content: "\e919";
+            color: white;
+            font-size: 0.9rem;
+        }
+    }
+
+    &__text {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &__close--button {
+        background: none;
+        border: none;
+        position: absolute;
+        right: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}

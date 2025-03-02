@@ -1,0 +1,93 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+    background-color: white;
+    position: inherit;
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        .icon-hamburger {
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+
+            &::before {
+                content: "\e91d";
+            }
+        }
+
+        .icon-logo {
+            margin-left: 2.25rem;
+            font-size: 1.3rem;
+
+            &::before {
+                content: "\e90f";
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        .icon-wishlist {
+            font-size: 1.4rem;
+            margin-right: 1.75rem;
+            position: relative;
+
+            &::before {
+                content: "\e90a";
+            }
+        }
+
+        .wishlist {
+            &__quantity {
+                position: absolute;
+                top: -0.05rem;
+                left: -0.5rem;
+                background-color: black;
+                color: white;
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 1px;
+                font-size: 0.7rem;
+            }
+        }
+
+        .icon-minicart {
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            position: relative;
+
+            &::before {
+                content: "\e91b";
+            }
+        }
+
+        .minicart {
+            &__quantity {
+                position: absolute;
+                top: 0rem;
+                left: -0.5rem;
+                background-color: black;
+                color: white;
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 1px;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
