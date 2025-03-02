@@ -1,0 +1,52 @@
+.main {
+    &--nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.625em;
+        background-color: white;
+        position: inherit;
+
+        .nav {
+            &__left {
+                display: flex;
+                align-items: center;
+            }
+
+            &__right {
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    &-minicart {
+                        font-size: 1.5em;
+                        margin-right: 2em;
+                        position: relative;
+
+                        &::before {
+                            content: "\e91b";
+                        }
+
+                        .minicart {
+                            &__quantity {
+                                position: absolute;
+                                top: 0.25em;
+                                left: -0.5em;
+                                background-color: black;
+                                color: white;
+                                border-radius: 50%;
+                                width: 1em;
+                                height: 1em;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding-bottom: 2px;
+                                font-size: 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
