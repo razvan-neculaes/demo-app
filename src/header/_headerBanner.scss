@@ -20,6 +20,9 @@
         transform: translateY(-50%);
         right: 0;
         width: auto;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
     &__wrapper {
